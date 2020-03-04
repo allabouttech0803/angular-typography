@@ -1,0 +1,43 @@
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";
+
+@import "~@angular/material/theming";
+@include mat-core();
+@import "./app/styles/first-typography.scss";
+@import "./app/styles/second-typography.scss";
+@import "./app/styles/third-typography.scss";
+@import "./app/styles/fourth-typography.scss";
+@import "./app/styles/fifth-typography.scss";
+@import "./app/styles/sixth-typography.scss";
+
+body {
+  height: 100%;
+}
+
+.first-typography {
+  @include angular-material-typography($first-custom-typography);
+}
+
+.second-typography {
+  @include angular-material-typography($second-custom-typography);
+}
+
+.third-typography {
+  @include angular-material-typography($third-custom-typography);
+}
+
+.fourth-typography {
+  @include angular-material-typography($fourth-custom-typography);
+}
+
+.fifth-typography {
+  @include angular-material-typography($fifth-custom-typography);
+}
+
+.sixth-typography {
+  @include angular-material-typography($sixth-custom-typography);
+}
+
+.mat-display-2 {
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+$custom-typography: mat-typography-config(
+  $font-family: "Quicksand, sans-serif",
+  $display-4: mat-typography-level(112px, 112px, 900, $letter-spacing: -0.05em),
+  $display-3: mat-typography-level(56px, 56px, 800, $letter-spacing: -0.02em),
+  $display-2: mat-typography-level(45px, 48px, 700, $letter-spacing: -0.005em),
+  $display-1: mat-typography-level(34px, 40px, 600),
+  $headline: mat-typography-level(26px, 36px, 900),
+  $title: mat-typography-level(24px, 34px, 800),
+  $subheading-2: mat-typography-level(22px, 32px, 700),
+  $subheading-1: mat-typography-level(20px, 30px, 700),
+  $body-2: mat-typography-level(18px, 28px, 700),
+  $body-1: mat-typography-level(16px, 26px, 600),
+  $caption: mat-typography-level(14px, 22px, 400)
+);
+
+@include angular-material-typography($custom-typography);
