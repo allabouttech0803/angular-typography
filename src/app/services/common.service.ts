@@ -13,8 +13,7 @@ export class CommonService {
   public setupRouting() {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        console.log("current url", event.url);
-        this.theme$ = of(event.url.replace('/', '')).pipe(delay(500));
+        this.theme$ = of(event.url.replace('/', ''));
       }
     });
   }

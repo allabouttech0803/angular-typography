@@ -38,6 +38,7 @@ body {
   @include angular-material-typography($sixth-custom-typography);
 }
 
-.mat-display-2 {
+.mat-display-2,
+.mat-display-1 {
   text-align: center;
 }
