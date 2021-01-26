@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SixthTypographyComponent } from './sixth-typography.component';
 
@@ -6,7 +6,7 @@ describe('SixthTypographyComponent', () => {
   let component: SixthTypographyComponent;
   let fixture: ComponentFixture<SixthTypographyComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ SixthTypographyComponent ]
     })
