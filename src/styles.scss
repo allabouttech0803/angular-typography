@@ -1,8 +1,9 @@
+@use '~@angular/material' as mat;
 @import "~bootstrap/scss/bootstrap-reboot";
 @import "~bootstrap/scss/bootstrap-grid";
 
 @import "~@angular/material/theming";
-@include mat-core();
+@include mat.core();
 @import "./app/styles/first-typography.scss";
 @import "./app/styles/second-typography.scss";
 @import "./app/styles/third-typography.scss";
@@ -15,27 +16,27 @@ body {
 }
 
 .first-typography {
-  @include angular-material-typography($first-custom-typography);
+  @include mat.all-component-typographies($first-custom-typography);
 }
 
 .second-typography {
-  @include angular-material-typography($second-custom-typography);
+  @include mat.all-component-typographies($second-custom-typography);
 }
 
 .third-typography {
-  @include angular-material-typography($third-custom-typography);
+  @include mat.all-component-typographies($third-custom-typography);
 }
 
 .fourth-typography {
-  @include angular-material-typography($fourth-custom-typography);
+  @include mat.all-component-typographies($fourth-custom-typography);
 }
 
 .fifth-typography {
-  @include angular-material-typography($fifth-custom-typography);
+  @include mat.all-component-typographies($fifth-custom-typography);
 }
 
 .sixth-typography {
-  @include angular-material-typography($sixth-custom-typography);
+  @include mat.all-component-typographies($sixth-custom-typography);
 }
 
 .mat-display-2,
